@@ -1,0 +1,17 @@
+C:\Users\HP\Desktop\Asp.NetCore\Api\P136Api\ApiIntro.Service\bin\Debug\net7.0\ApiIntro.Service.deps.json
+C:\Users\HP\Desktop\Asp.NetCore\Api\P136Api\ApiIntro.Service\bin\Debug\net7.0\ApiIntro.Service.dll
+C:\Users\HP\Desktop\Asp.NetCore\Api\P136Api\ApiIntro.Service\bin\Debug\net7.0\ApiIntro.Service.pdb
+C:\Users\HP\Desktop\Asp.NetCore\Api\P136Api\ApiIntro.Service\bin\Debug\net7.0\ApiIntro.Core.dll
+C:\Users\HP\Desktop\Asp.NetCore\Api\P136Api\ApiIntro.Service\bin\Debug\net7.0\ApiIntro.Data.dll
+C:\Users\HP\Desktop\Asp.NetCore\Api\P136Api\ApiIntro.Service\bin\Debug\net7.0\ApiIntro.Data.pdb
+C:\Users\HP\Desktop\Asp.NetCore\Api\P136Api\ApiIntro.Service\bin\Debug\net7.0\ApiIntro.Core.pdb
+C:\Users\HP\Desktop\Asp.NetCore\Api\P136Api\ApiIntro.Service\obj\Debug\net7.0\ApiIntro.Service.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Asp.NetCore\Api\P136Api\ApiIntro.Service\obj\Debug\net7.0\ApiIntro.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Asp.NetCore\Api\P136Api\ApiIntro.Service\obj\Debug\net7.0\ApiIntro.Service.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Asp.NetCore\Api\P136Api\ApiIntro.Service\obj\Debug\net7.0\ApiIntro.Service.AssemblyInfo.cs
+C:\Users\HP\Desktop\Asp.NetCore\Api\P136Api\ApiIntro.Service\obj\Debug\net7.0\ApiIntro.Service.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Asp.NetCore\Api\P136Api\ApiIntro.Service\obj\Debug\net7.0\ApiIntro.Service.csproj.CopyComplete
+C:\Users\HP\Desktop\Asp.NetCore\Api\P136Api\ApiIntro.Service\obj\Debug\net7.0\ApiIntro.Service.dll
+C:\Users\HP\Desktop\Asp.NetCore\Api\P136Api\ApiIntro.Service\obj\Debug\net7.0\refint\ApiIntro.Service.dll
+C:\Users\HP\Desktop\Asp.NetCore\Api\P136Api\ApiIntro.Service\obj\Debug\net7.0\ApiIntro.Service.pdb
+C:\Users\HP\Desktop\Asp.NetCore\Api\P136Api\ApiIntro.Service\obj\Debug\net7.0\ref\ApiIntro.Service.dll

@@ -1305,6 +1305,48 @@
             "rid": "win"
           }
         }
+      },
+      "ApiIntro.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ApiIntro.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApiIntro.Core.dll": {}
+        }
+      },
+      "ApiIntro.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "ApiIntro.Core": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.9",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9"
+        },
+        "compile": {
+          "bin/placeholder/ApiIntro.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApiIntro.Data.dll": {}
+        }
+      },
+      "ApiIntro.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "ApiIntro.Data": "1.0.0",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "FluentValidation": "11.6.0",
+          "FluentValidation.AspNetCore": "11.3.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.6.0"
+        },
+        "compile": {
+          "bin/placeholder/ApiIntro.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApiIntro.Service.dll": {}
+        }
       }
     }
   },
@@ -4030,18 +4072,32 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "ApiIntro.Core/1.0.0": {
+      "type": "project",
+      "path": "../ApiIntro.Core/ApiIntro.Core.csproj",
+      "msbuildProject": "../ApiIntro.Core/ApiIntro.Core.csproj"
+    },
+    "ApiIntro.Data/1.0.0": {
+      "type": "project",
+      "path": "../ApiIntro.Data/ApiIntro.Data.csproj",
+      "msbuildProject": "../ApiIntro.Data/ApiIntro.Data.csproj"
+    },
+    "ApiIntro.Service/1.0.0": {
+      "type": "project",
+      "path": "../ApiIntro.Service/ApiIntro.Service.csproj",
+      "msbuildProject": "../ApiIntro.Service/ApiIntro.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "ApiIntro.Service >= 1.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "FluentValidation >= 11.6.0",
       "FluentValidation.AspNetCore >= 11.3.0",
       "FluentValidation.DependencyInjectionExtensions >= 11.6.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.5",
-      "Microsoft.EntityFrameworkCore >= 7.0.9",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.9",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.9",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -4071,7 +4127,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\HP\\Desktop\\Asp.NetCore\\Api\\P136Api\\ApiIntro.Service\\ApiIntro.Service.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\Api\\P136Api\\ApiIntro.Service\\ApiIntro.Service.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -4104,17 +4164,9 @@
             "target": "Package",
             "version": "[7.0.5, )"
           },
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[7.0.9, )"
-          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
-            "target": "Package",
-            "version": "[7.0.9, )"
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[7.0.9, )"
           },

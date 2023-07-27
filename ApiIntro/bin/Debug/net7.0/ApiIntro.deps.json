@@ -8,14 +8,13 @@
     ".NETCoreApp,Version=v7.0": {
       "ApiIntro/1.0.0": {
         "dependencies": {
+          "ApiIntro.Service": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "FluentValidation": "11.6.0",
           "FluentValidation.AspNetCore": "11.3.0",
           "FluentValidation.DependencyInjectionExtensions": "11.6.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.5",
-          "Microsoft.EntityFrameworkCore": "7.0.9",
           "Microsoft.EntityFrameworkCore.Design": "7.0.9",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
@@ -726,6 +725,33 @@
             "fileVersion": "5.0.20.51904"
           }
         }
+      },
+      "ApiIntro.Core/1.0.0": {
+        "runtime": {
+          "ApiIntro.Core.dll": {}
+        }
+      },
+      "ApiIntro.Data/1.0.0": {
+        "dependencies": {
+          "ApiIntro.Core": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.9",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9"
+        },
+        "runtime": {
+          "ApiIntro.Data.dll": {}
+        }
+      },
+      "ApiIntro.Service/1.0.0": {
+        "dependencies": {
+          "ApiIntro.Data": "1.0.0",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "FluentValidation": "11.6.0",
+          "FluentValidation.AspNetCore": "11.3.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.6.0"
+        },
+        "runtime": {
+          "ApiIntro.Service.dll": {}
+        }
       }
     }
   },
@@ -1280,6 +1306,21 @@
       "sha512": "sha512-c1ho9WU9ZxMZawML+ssPKZfdnrg/OjR3pe0m9v8230z3acqphwvPJqzAkH54xRYm5ntZHGG1EPP3sux9H3qSPg==",
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
+    },
+    "ApiIntro.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ApiIntro.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ApiIntro.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

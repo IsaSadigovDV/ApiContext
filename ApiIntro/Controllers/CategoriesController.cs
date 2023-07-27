@@ -2,12 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ApiIntro.Contexts;
-using ApiIntro.Dtos.Categories;
-using ApiIntro.Entities;
-using ApiIntro.Repositories;
-using ApiIntro.Repositories.Interfaces;
-using ApiIntro.Services.Interfaces;
+using ApiIntro.Service.Dtos.Categories;
+using ApiIntro.Service.Services.Interfaces;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
