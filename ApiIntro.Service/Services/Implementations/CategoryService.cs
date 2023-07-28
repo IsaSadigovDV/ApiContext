@@ -20,7 +20,7 @@ namespace ApiIntro.Service.Services.Implementations
             _repository = repository;
         }
 
-        public async Task<ApiResponse> CreateAsync(CategoryPostDto dto)
+        public async Task<ApiResponse> CreateAsync(ProductPostDto dto)
         {
             if (await _repository.IsExsist(x => x.Name.Trim().ToLower() == dto.Name.Trim().ToLower()))
             {
@@ -38,9 +38,9 @@ namespace ApiIntro.Service.Services.Implementations
             
                 IQueryable<Category> query = await _repository.GetAllAsync(x => !x.IsDeleted);
 
-                List<CategoryGetDto> categories = new List<CategoryGetDto>();
+                List<ProductGetDto> categories = new List<ProductGetDto>();
 
-                categories = await query.Select(x => new CategoryGetDto { Name = x.Name }).ToListAsync();
+                categories = await query.Select(x => new ProductGetDto { Name = x.Name }).ToListAsync();
 
                 return new ApiResponse { Items = categories, StatusCode = 200 };
            
@@ -55,7 +55,7 @@ namespace ApiIntro.Service.Services.Implementations
                 return new ApiResponse {StatusCode = 404,Description="Item not found"};
             }
 
-            CategoryGetDto getDto = _mapper.Map<CategoryGetDto>(category);
+            ProductGetDto getDto = _mapper.Map<ProductGetDto>(category);
             return new ApiResponse { Items = getDto, StatusCode = 200 };
         }
 
@@ -73,7 +73,7 @@ namespace ApiIntro.Service.Services.Implementations
             return new ApiResponse { StatusCode = 200 };
         }
 
-        public async Task<ApiResponse> UpdateAsync(int id,CategoryUpdateDto dto)
+        public async Task<ApiResponse> UpdateAsync(int id,ProductUpdateDto dto)
         {
             Category? category = await _repository.GetAsync(x => x.Id == id && !x.IsDeleted);
 

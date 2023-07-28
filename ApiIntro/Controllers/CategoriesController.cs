@@ -35,7 +35,7 @@ namespace ApiIntro.Controllers
             return StatusCode(result.StatusCode, result);
         }
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody]CategoryPostDto dto)
+        public async Task<IActionResult> Create([FromBody]ProductPostDto dto)
         {
            var resslt= await _categoryService.CreateAsync(dto);
             return StatusCode(resslt.StatusCode,resslt);
@@ -48,7 +48,7 @@ namespace ApiIntro.Controllers
             return StatusCode(result.StatusCode);
         }
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id,[FromBody]CategoryUpdateDto dto)
+        public async Task<IActionResult> Update(int id,[FromBody]ProductUpdateDto dto)
         {
             var result =await _categoryService.UpdateAsync(id, dto);
             return StatusCode(result.StatusCode,result);

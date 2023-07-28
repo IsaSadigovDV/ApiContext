@@ -4,7 +4,7 @@ using FluentValidation;
 
 namespace ApiIntro.Service.Validations.Categries
 {
-    public class CategoryPostDtoValidation : AbstractValidator<CategoryPostDto>
+    public class CategoryPostDtoValidation : AbstractValidator<ProductPostDto>
     {
         public CategoryPostDtoValidation()
         {
